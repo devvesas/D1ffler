@@ -1,0 +1,5 @@
+# Tested Windows x64 runtime, Python 3.10. Update with the release inventory.
+PyQt6==6.11.0
+PyQt6-Qt6==6.11.0
+PyQt6_sip==13.11.1
+regex==2026.4.4

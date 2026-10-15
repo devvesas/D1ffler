@@ -1,0 +1,10 @@
+Shared header
+First section: unchanged
+First section: updated value
+Shared spacer after first change
+Second section: unchanged
+Shared spacer after second change
+Third section: unchanged
+Third section: updated ending
+Third section: additional detail
+Shared footer

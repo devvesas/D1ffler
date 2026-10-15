@@ -1,0 +1,4 @@
+# Preserve reviewed bytes so inventory hashes survive checkout on every OS.
+/LICENSE -text
+/licensing/inventory.json -text
+/licenses/** -text

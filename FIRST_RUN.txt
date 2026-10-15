@@ -1,0 +1,36 @@
+D1ffler locally built Windows x64 executables
+
+The project supplies sources and build scripts. These instructions apply to
+executables you built yourself. Building, testing, and signing are your responsibility;
+the build scripts produce unsigned executables and do not publish them.
+
+The supplied build profile targets Windows 10 version 1809 or later and Windows 11
+on an x64 PC. It bundles Python; target machines do not need Python installed.
+Extract the whole portable ZIP before launching; do not run inside it.
+
+Open D1ffler.exe for the desktop app. Right-click a panel to load a file, folder,
+or ZIP; paste text into a panel. Use Save or Ctrl+S to write edited text.
+The top-right information button opens offline help, the version, and Licenses.
+
+D1ffler is free software under GPL-3.0-or-later, with no warranty. See LICENSE,
+COPYRIGHT.md, THIRD_PARTY_NOTICES.md, and the upstream texts in licenses/.
+SOURCE_ACCESS.md describes rebuilding, replacement libraries, and sources to retain
+if you redistribute your build. SOURCE_ARCHIVE.txt identifies the matching source ZIP.
+
+From PowerShell in the extracted folder:
+  .\D1ffler-cli.exe --version
+  .\D1ffler-cli.exe compare "C:\left.txt" "C:\right.txt" --output "C:\report.json"
+Exit codes: 0 equivalent, 1 different, 2 invalid/incomplete/failed.
+CLI help: .\D1ffler-cli.exe compare --help
+
+Git is optional. Put Git on PATH to use revisions, worktrees, commits, and
+.gitignore rules. Ordinary comparisons work without it.
+
+Settings, workspaces, diagnostics, and recovery live in %LOCALAPPDATA%\D1ffler.
+Close D1ffler before changing builds. Extract a new build to a new folder and
+launch its D1ffler.exe; user state is retained. Keep your previous build for rollback.
+Reports and edited files need writable destinations; the executable folder may be read-only.
+
+README.md documents running from Python, building, and verifying local executables.
+SHA256SUMS.txt and release.json record hashes and automated verification results.
+No installer or automatic updater is provided.

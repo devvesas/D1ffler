@@ -1,0 +1,7 @@
+Shared opening line 1
+Shared opening line 2
+Only on the right: inserted line 1
+Only on the right: inserted line 2
+Only on the right: inserted line 3
+Shared closing line 1
+Shared closing line 2
